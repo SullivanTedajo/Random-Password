@@ -1,0 +1,77 @@
+@forward 'boilerplate';
+@forward 'color';
+
+.container{
+    background: linear-gradient(to top, hsl(218, 92%, 10%), hsl(218, 92%, 15%));
+    width: 100%;
+    min-height: 100vh;
+    padding: 12.5em;
+}
+
+.password{
+    width: 100%;
+    max-width: 30em;
+
+    &__title{
+        font-size: 2.4em;
+        color: var(--color-text-light);
+        line-height: 1.3;
+    }
+    &__active{
+        // font-size: 1.8em;
+        display: block;
+        color: var(--color-text);
+        text-decoration: underline;
+        text-transform: capitalize;
+        text-underline-offset: .4em;
+    }
+
+    &__display{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        background-color: var(--color-bg-light);
+        margin-block: 2em;
+        padding: 1em;
+        border-radius: 0.5em;
+    }
+
+    &__control{
+        font-size: 1em;
+        display: block;
+        width: 100%;
+        border: none;
+        background-color: inherit;
+        padding: .7em .5em;
+    }
+
+    &__copy-img{
+        cursor: pointer;
+    }
+
+    &__submit{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .5em;
+        background-color: var(--color-bg-button);
+        color: var(--color-text-light);
+        border-radius: .5em;
+        border: none;
+        padding: 1em .6em ;
+        font-size: 1.1em;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+    &__img-generate{
+        display: inline-block;
+    
+    }
+}
+
+@media only screen and (max-width: 60em) {
+    .container{
+        padding: 5em 2em;
+    }
+}

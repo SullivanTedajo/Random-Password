@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required Meta Tags  -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Page Title  -->
+    <title>Random Password Generator | Vanilla JS</title>
+
+    <!-- CSS Files  -->
+     <link rel="stylesheet" href="scss/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="password">
+            <h1 class="password__title">Generate a <span class="password__active">Random Password</span></h1>
+            <div class="password__display">
+                <input type="text" class="password__control" placeholder="Password" id="password">
+                <img src="images/copy.png" alt=""
+                class="password__copy-img"
+                width="24px"
+                height="24px">
+            </div>
+            <button onclick="showPassword()" class="password__submit">
+                <img src="images/generate.png" alt="" class="password__img-generate"
+                width="16px"
+                height="16px">
+                Generate Password
+            </button>
+        </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
